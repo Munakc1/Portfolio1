@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" </head>
+
+
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/klogo.png" id="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-delete-left" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Website Developer</p>
+                <h1>Hi, I'm <span>Muna</span> <br>KC From Kathmandu,</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Muna-removebg-preview (1)_LE_upscale_balanced_x4.jpg" alt="User Image">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a motivated and eager-to-learn web developer, passionate about
+                        assisting clients with marketing websites. With a strong ability to quickly adapt
+                        to new technologies in the web development field, I have successfully
+                        completed several college-related projects. I stay up-to-date with the latest
+                        industry trends.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>CSS, HTML, JavaScript, C, C++, React.js, Node.js</li>
+                            <li><span>Databases</span><br>DBMS</li>
+                            <li><span>Problem-Solving</span><br>Data Structures and Algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship (Fresher)</span><br>Assisted in developing and testing web development projects. Collaborated with team members to address client needs and ensure project delivery within deadlines.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2027</span><br>BSc. CSIT, Asian School of Management and Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I create responsive and modern web designs tailored to client requirements.</p>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Specialized in designing user-friendly interfaces for web and mobile applications.</p>
+                </div>
+                <div>
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>App Development</h2>
+                    <p>Building seamless and engaging Android and iOS applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-2.png" alt="Deraa Project">
+                    <div class="layer">
+                        <h3>Deraa</h3>
+                        <p>A room rental website connecting landlords and tenants in Kathmandu using HTML, CSS, JS. Managed multi-admin functionality and explored unique monetization strategies.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Process Scheduling">
+                    <div class="layer">
+                        <h3>Process Scheduling Algorithms</h3>
+                        <p>Implemented FCFS, C-LOOK, SJF, SRTN, and Round Robin scheduling techniques in C.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> <a href="mailto:kcm020516@gmail.com">kcm020516@gmail.com</a></p>
+                    <p><i class="fas fa-phone-volume"></i> 9822927970</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Munakc1"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/muna-kc-0739a9283"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Muna KC. Made with <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
